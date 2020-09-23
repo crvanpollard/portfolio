@@ -2219,21 +2219,32 @@ input, select, textarea {
 			}
 
 /* Actions */
+#div_top_hypers {
+    background-color:#eeeeee;
+    display:inline;      
+}
+#ul_top_hypers {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
 
 	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display:inline;      
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		flex-wrap: wrap;
+		padding: 40px calc((100% - (255px * 3)) / 2);
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+			list-style: none;
+			flex-basis: 33.333333%;
+			 display: flex;
 		}
 
 		ul.actions.special {
@@ -3193,6 +3204,15 @@ background-repeat: no-repeat;
 background-size: 100%;
 background-color: transparent;
 background-size: cover;
+}	
+.cover-image-geo {
+	background-image: url(../../images/geohip/geohip.png);
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: transparent;
+	background-size: cover;
+	background-position: 40% 0%;
 }	
 .fullscreen-cover .cover-headline{
 	opacity: 0;
