@@ -2034,7 +2034,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.0;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -2219,21 +2219,32 @@ input, select, textarea {
 			}
 
 /* Actions */
+#div_top_hypers {
+    background-color:#eeeeee;
+    display:inline;      
+}
+#ul_top_hypers {
+    display: flex;
+    justify-content:space-around;
+    list-style-type:none;
+}
 
 	ul.actions {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display:inline;      
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
 		padding-left: 0;
+		flex-wrap: wrap;
+		padding: 40px calc((100% - (255px * 3)) / 2);
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1em;
 			vertical-align: middle;
+			list-style: none;
+			flex-basis: 33.333333%;
+			 display: flex;
 		}
 
 		ul.actions.special {
@@ -2583,7 +2594,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 25%;
 	}
 
 		#header > * {
@@ -2661,10 +2672,10 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
+		margin-left: 28%;
+	/*	max-width: 54em; */
 		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+	/*	width: calc(100% - 35%); */
 	}
 
 		#main > section {
@@ -2965,7 +2976,7 @@ input, select, textarea {
 
 			#header {
 				padding: 6em 3em 3em 3em;
-				width: 30%;
+				width: 25%;
 			}
 
 				#header h1 {
@@ -3186,3 +3197,40 @@ input, select, textarea {
 			}
 
 	}
+.cover-image {
+	background-image: url(../../images/30DMC/fulls/23_30DMC_population.jpg);
+	height: 350px;
+background-repeat: no-repeat;
+background-size: 100%;
+background-color: transparent;
+background-size: cover;
+}	
+.cover-image-geo {
+	background-image: url(../../images/geohip/geohip.png);
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: transparent;
+	background-size: cover;
+	background-position: 40% 0%;
+}	
+.fullscreen-cover .cover-headline{
+	opacity: 0;
+position: absolute;
+margin-bottom: 96px;
+z-index: 1;
+max-width: 100%;
+transition: all 0s linear;
+-moz-transition: all 0s linear;
+-webkit-transition: all 0s linear;
+-o-transition: all 0s linear;
+}
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.center {
+    text-align: center;
+}
