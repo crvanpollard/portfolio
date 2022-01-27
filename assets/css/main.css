@@ -3205,6 +3205,14 @@ background-size: 100%;
 background-color: transparent;
 background-size: cover;
 }	
+.cover-image-20 {
+background-image: url(../../images/30DMC20/fulls/19.jpeg);
+height: 410px;
+background-repeat: no-repeat;
+background-size: 100%;
+background-color: transparent;
+background-size: cover;
+}
 .cover-image-21 {
 	background-image: url(../../images/30DMC21/fulls/18.jpg);
 	height: 410px;
